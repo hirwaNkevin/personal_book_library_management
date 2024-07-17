@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personal_book_library_management/screens/HomeScreen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -12,7 +13,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   final List<Widget> _pages = <Widget>[
-    const Center(child: Text("Home")),
+    const HomeScreen(
+      title: '',
+    ),
     const Center(child: Text("Books")),
     const Center(child: Text("Settings")),
   ];
@@ -34,7 +37,8 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.book), label: 'Books'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.book), label: 'Manage Books'),
           BottomNavigationBarItem(
               icon: Icon(Icons.settings), label: 'Settings'),
         ],

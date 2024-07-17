@@ -57,6 +57,12 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/to-kill-a-mockingbird.jpg
+    - assets/one-hundred-years-of-solitude.jpg
+    - assets/pride-and-prejudice.jpg
+    - assets/the-lord-of-the-rings.jpg
+    - assets/frankenstein.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
