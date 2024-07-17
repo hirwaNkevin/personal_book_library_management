@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:personal_book_library_management/screens/HomeScreen.dart';
+import 'package:personal_book_library_management/screens/ManageBooksScreen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
     const HomeScreen(
       title: '',
     ),
-    const Center(child: Text("Books")),
+    const ManageBooksScreen(title: ''),
     const Center(child: Text("Settings")),
   ];
 
